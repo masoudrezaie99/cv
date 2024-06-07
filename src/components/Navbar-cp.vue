@@ -167,6 +167,10 @@
 
 }
 
+.sidenav .router-link-active{
+                            color: #00ffc3;
+                        }
+
 
 .sidenav .closebtn {
   position: absolute;
