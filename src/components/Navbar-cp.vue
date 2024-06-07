@@ -21,11 +21,11 @@
             </div>
             <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" @click="closeNav()"><i class="fa fa-close"></i></a>
-            <router-link to="/">Home</router-link>
-            <router-link to="/AboutMe">About me</router-link>
-            <router-link to="/Resume">Resume</router-link>
-            <router-link to="/Portfolio">Portfolio</router-link>
-            <router-link to="/contact">contact</router-link>
+            <router-link to="/" @click="closeNav()">Home</router-link>
+            <router-link to="/AboutMe" @click="closeNav()">About me</router-link>
+            <router-link to="/Resume" @click="closeNav()">Resume</router-link>
+            <router-link to="/Portfolio" @click="closeNav()">Portfolio</router-link>
+            <router-link to="/contact" @click="closeNav()">contact</router-link>
             </div>
 
         </div>
@@ -101,6 +101,7 @@
                     justify-content: space-between;
 
                     li{
+                        
                         a{
                             color: white;
                             text-decoration: none;
@@ -110,6 +111,11 @@
                             &:hover{
                             color:#00ffc3
                         }
+                        
+                        }
+
+                        .router-link-active{
+                            color: #00ffc3;
                         }
                         
                     }
@@ -184,4 +190,9 @@
         }
     }
         
+
+
+    .router-link-active{
+        color: red;
+    }
 </style>

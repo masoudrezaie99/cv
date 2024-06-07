@@ -43,7 +43,7 @@ body{
 
 @media only screen and (min-width: 768px) {
   #app{
-    margin: 30px 200px;
+    margin: 30px 300px;
     padding: 10px 40px;
     border-radius: 40px;
   }
