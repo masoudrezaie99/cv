@@ -1,21 +1,21 @@
 <template>
   <NavbarCp/>
   
-  <HomeCp/>
+  <RouterView/>
 
   <FooterCp/>
 </template>
 
 <script>
 import NavbarCp from './components/Navbar-cp.vue';
-import HomeCp from './components/Home-cp.vue';
+
 import FooterCp from './components/Footer-cp.vue';
 
 export default {
   name: 'App',
   components: {
     NavbarCp,
-    HomeCp,
+
     FooterCp
   }
 }

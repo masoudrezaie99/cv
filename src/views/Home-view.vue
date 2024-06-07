@@ -15,9 +15,7 @@
 </template>
 
 <script>
-    export default {
-        name:'Home-cp'
-    }
+   
 </script>
 
 <style lang="scss" scoped>

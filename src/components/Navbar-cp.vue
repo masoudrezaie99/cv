@@ -7,11 +7,13 @@
             </div>
 
             <div><ul>
-                <li>Home</li>
-                <li>About me</li>
-                <li>Resume</li>
-                <li>Portfolio</li>
-                <li>contact</li>
+                
+                <li><router-link to="/">Home</router-link></li>
+                <li><router-link to="/AboutMe">About me</router-link></li>
+                <li><router-link to="/Resume">Resume</router-link></li>
+                <li><router-link to="/Portfolio">Portfolio</router-link></li>
+                <li><router-link to="/contact">contact</router-link></li>
+                
             </ul></div>
 
             <div @click="openNav()">
@@ -19,11 +21,11 @@
             </div>
             <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" @click="closeNav()"><i class="fa fa-close"></i></a>
-            <a href="#">Home</a>
-            <a href="#">About me</a>
-            <a href="#">Resume</a>
-            <a href="#">Portfolio</a>
-            <a href="#">contact</a>
+            <router-link to="/">Home</router-link>
+            <router-link to="/AboutMe">About me</router-link>
+            <router-link to="/Resume">Resume</router-link>
+            <router-link to="/Portfolio">Portfolio</router-link>
+            <router-link to="/contact">contact</router-link>
             </div>
 
         </div>
@@ -99,12 +101,17 @@
                     justify-content: space-between;
 
                     li{
-                        font-size: large;
-                        cursor: pointer;
-                        font-weight: 500;
-                        &:hover{
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            font-size: large;
+                            cursor: pointer;
+                            font-weight: 500;
+                            &:hover{
                             color:#00ffc3
                         }
+                        }
+                        
                     }
                 }
             }
