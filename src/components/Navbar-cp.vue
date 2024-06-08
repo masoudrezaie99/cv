@@ -52,47 +52,46 @@
 </script>
 
 <style lang="scss" scoped>
-    nav{
-        margin-top: 20px;
-        margin-bottom: 50px;
+  nav{
+    margin-top: 20px;
+    margin-bottom: 50px;
 
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
 
         div{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            color: white;
-
-            div:nth-child(1){
+            &:nth-child(1){
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 color: white;
                 cursor: pointer;
-                &:hover{
-                        color:#00ffc3
-                        }
-
-                div:nth-child(1){
-                    border: 2px solid #00ffc3;
-                    border-radius: 100%;
-                    overflow: hidden;
-                    width: 50px;
-                    height: 50px;
-                    margin-right: 10px;
-
-                    img{
-                        width: 100%;
+                    &:hover{
+                    color:#00ffc3
                     }
-                }
-            }
+                    div{
+                        &:nth-child(1){
+                        border: 2px solid #00ffc3;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 10px;
 
-            div:nth-child(2){
+                        img{
+                            width: 100%;
+                        }
+                        }
+                    }
+            }
+            &:nth-child(2){
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 min-width: 500px;
-
                 ul{
                     width: 100%;
                     list-style: none;
@@ -101,7 +100,6 @@
                     justify-content: space-between;
 
                     li{
-                        
                         a{
                             color: white;
                             text-decoration: none;
@@ -109,20 +107,17 @@
                             cursor: pointer;
                             font-weight: 500;
                             &:hover{
-                            color:#00ffc3
-                        }
-                        
+                                color:#00ffc3
+                            }
                         }
 
                         .router-link-active{
                             color: #00ffc3;
                         }
-                        
                     }
                 }
             }
-
-            div:nth-child(3){
+            &:nth-child(3){
                 display: none;
                 height:fit-content;
                 justify-content: center;
@@ -132,15 +127,14 @@
                 padding: 8px;
                 font-size: large;
                 cursor: pointer;
-
-                
             }
         }
     }
+  }
 
 
-
-
+    /////////////////////////////////
+ 
     .sidenav {
   height: 100%;
   width: 0;
@@ -156,47 +150,45 @@
   text-align:center;
   display: flex;
   flex-direction: column;
+
+  a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .router-link-active{
+    color: #00ffc3;
+  }
+
+  .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
 }
 
-.sidenav a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #f1f1f1;
-  display: block;
-  transition: 0.3s;
 
-}
-
-.sidenav .router-link-active{
-                            color: #00ffc3;
-                        }
-
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
 
     @media only screen and (max-width: 768px) {
         nav{
             div{
-                div:nth-child(1){
-                    h1{
-                        font-size: 1em;
+                div{
+                    &:nth-child(1){
+                        h1{
+                            font-size: 1em;
+                        }
                     }
+                    &:nth-child(2){display: none;}
+                    &:nth-child(3){display: flex;}
                 }
-                div:nth-child(2){display: none;}
-                div:nth-child(3){display: flex;}
             }
         }
+
     }
         
-
-
-    .router-link-active{
-        color: red;
-    }
 </style>

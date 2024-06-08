@@ -28,11 +28,14 @@
 <style lang="scss" scoped>
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     
     div{
+        width: 100%;
+        
         &:nth-child(1){
-            width: 100%;
+            max-width: 400px;
+            height: fit-content;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,10 +52,9 @@ main{
             }
         }
         &:nth-child(2){
-            width: 100%;
             padding: 40px;
             p{
-                font-size: 18px;
+                font-size: 1.2em;
                 color: white;
             }
         }
@@ -62,6 +64,7 @@ main{
 @media only screen and (max-width: 768px) {
     main{
         flex-direction: column;
+        align-items: center;
     }
 }
 </style>
