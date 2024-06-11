@@ -16,7 +16,16 @@ const routes = [
             title:'About Me'
         }
 
+    },
+    {
+        path: '/ContactMe',
+        component:()=> import('../views/Contact-view.vue'),
+        meta:{
+            title:'Contact Me'
+        }
+
     }
+
 ];
 
 const router = createRouter({

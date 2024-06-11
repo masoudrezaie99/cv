@@ -9,10 +9,10 @@
             <div><ul>
                 
                 <li><router-link to="/">Home</router-link></li>
-                <li><router-link to="/AboutMe">About me</router-link></li>
+                <li><router-link to="/AboutMe">About Me</router-link></li>
                 <li><router-link to="/Resume">Resume</router-link></li>
                 <li><router-link to="/Portfolio">Portfolio</router-link></li>
-                <li><router-link to="/contact">contact</router-link></li>
+                <li><router-link to="/ContactMe">Contact Me</router-link></li>
                 
             </ul></div>
 
@@ -22,10 +22,10 @@
             <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" @click="closeNav()"><i class="fa fa-close"></i></a>
             <router-link to="/" @click="closeNav()">Home</router-link>
-            <router-link to="/AboutMe" @click="closeNav()">About me</router-link>
+            <router-link to="/AboutMe" @click="closeNav()">About Me</router-link>
             <router-link to="/Resume" @click="closeNav()">Resume</router-link>
             <router-link to="/Portfolio" @click="closeNav()">Portfolio</router-link>
-            <router-link to="/contact" @click="closeNav()">contact</router-link>
+            <router-link to="/ContactMe" @click="closeNav()">Contact Me</router-link>
             </div>
 
         </div>
