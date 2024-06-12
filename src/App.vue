@@ -42,7 +42,9 @@ export default {
   font-style: normal;
 }
 body{
-  background-color: #1e2d3f;
+  background-color: rgba(30, 45, 63, .72);
+
+;
 }
 
 #app{
