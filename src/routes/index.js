@@ -24,6 +24,14 @@ const routes = [
             title:'Contact Me'
         }
 
+    },
+    {
+        path: '/Skills',
+        component:()=> import('../views/Skills-view.vue'),
+        meta:{
+            title:'Skills'
+        }
+
     }
 
 ];

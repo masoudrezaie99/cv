@@ -11,13 +11,23 @@ import NavbarCp from './components/Navbar-cp.vue';
 
 import FooterCp from './components/Footer-cp.vue';
 
+
+
+
+
 export default {
   name: 'App',
+ 
+
+
   components: {
     NavbarCp,
 
     FooterCp
-  }
+  },
+
+
+
 }
 </script>
 
@@ -32,7 +42,7 @@ export default {
   font-style: normal;
 }
 body{
-  background-color: rgb(30 45 63 / 72%);
+  background-color: #1e2d3f;
 }
 
 #app{
@@ -40,13 +50,7 @@ body{
   overflow:hidden;
   box-shadow: 10px 10px 25px -3px rgb(2, 4, 6);
   
-  
 }
-
-
-
-
-
 
 
 
