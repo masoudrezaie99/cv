@@ -2,8 +2,10 @@
     <nav>
         <div>
             <div>
+                <router-link to="/">
                 <div><img src="../assets/logo2.png" alt=""></div>
                 <h1>Masoud Rezaie</h1>
+            </router-link>
             </div>
 
             <div><ul>
@@ -64,11 +66,13 @@
 
         div{
             &:nth-child(1){
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                color: white;
-                cursor: pointer;
+                    a{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    color: white;
+                    cursor: pointer;
+                    text-decoration: none;
                     &:hover{
                     color:#00ffc3
                     }
@@ -86,6 +90,7 @@
                         }
                         }
                     }
+                }
             }
             &:nth-child(2){
                 display: flex;
