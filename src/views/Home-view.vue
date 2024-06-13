@@ -1,13 +1,13 @@
 <template>
     <main>
 
-        <div>
+        <div class="animatepop">
             <p>Independent</p>
             <p>Front-End Developer</p>
             <p>Experienced front-end developer specializing in Vue.js and Nuxt.js with a passion for crafting intuitive and visually appealing web applications.</p>
         </div>
 
-        <div>
+        <div class="animatepop">
             <img src="../assets/pic.jpeg" alt="">
         </div>
         

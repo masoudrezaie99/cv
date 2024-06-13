@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="box-container" v-for="skill in skills" :key="skill.id">
+        <div class="box-container animatepop " v-for="skill in skills" :key="skill.id">
             <p>{{ skill.name }}</p>
 
             <div class="progressbar-container">
@@ -121,6 +121,7 @@
 </script>
 
 <style lang="scss" scoped>
+
 main{
     display: flex;
     flex-direction: row;
@@ -172,4 +173,5 @@ main{
 
     }
 }
+
 </style>

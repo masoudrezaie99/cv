@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card animatepop">
     <i :="$attrs" class="card-icon"></i>
     <p>{{ infotext }}</p>
   </div>

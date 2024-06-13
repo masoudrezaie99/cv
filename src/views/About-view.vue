@@ -1,7 +1,7 @@
 <template>
     <main>
-        <div><img src="../assets/pic.jpeg" alt=""></div>
-        <div>
+        <div class="animatepop"><img src="../assets/pic.jpeg" alt=""></div>
+        <div class="animatepop">
             
             <p>Hello! My name is Masoud Rezaie, and I was born in the vibrant city of Tehran. I am a passionate and self-taught front-end developer with a special focus on Vue.js. Over the years, I've dedicated myself to mastering the art of creating seamless and intuitive user interfaces that enhance the overall user experience.</p>
         
