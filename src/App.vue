@@ -58,6 +58,10 @@ body{
   animation-name: animate-pop;
   animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
   animation-duration: 0.3s;
+ 
+  
+  
+  
 }
 
 @keyframes animate-pop {
