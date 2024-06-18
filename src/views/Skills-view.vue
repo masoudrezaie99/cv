@@ -124,12 +124,7 @@
                 maxVal:50
             },
             
-        ],
-
-        i:0,
-
-   
-            
+        ],  
         
       }
     },
@@ -146,9 +141,12 @@
             
                 setInterval(function() {
                     if(element.minVal<element.maxVal){
-                element.minVal++
+                element.minVal+=10
                 }
-            }, 10);
+                    else{
+                        element.minVal=element.maxVal
+                    }
+            }, 50);
             
             
         });
