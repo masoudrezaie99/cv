@@ -5,6 +5,7 @@
         <a href="https://www.instagram.com/iammasoud99/?utm_source=qr&r=nametag"><i class="fa fa-instagram"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="https://www.t.me/masoudrezaie99"><i class="fa fa-telegram"></i></a>
+        <a href="https://github.com/masoudrezaie99"><i class="fa fa-github"></i></a>
     </div>
     </div>
 </template>
