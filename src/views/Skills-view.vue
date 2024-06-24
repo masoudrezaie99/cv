@@ -16,130 +16,27 @@
   </template>
 
 <script>
+
+  import { useTaskStore } from '../stores/taskStore.js'
+  import { storeToRefs } from 'pinia'
+
   export default {
-    data () {
-      return {
-
-        skills:[
-            {
-                id:1,
-                name:'Html/css',
-                minVal:0,
-                maxVal:100
-            },
-            {
-                id:2,
-                name:'Javascript',
-                minVal:0,
-                maxVal:90
-            },
-            {
-                id:3,
-                name:'Vue Js',
-                minVal:0,
-                maxVal:90
-            },
-            {
-                id:3,
-                name:'Pinia',
-                minVal:0,
-                maxVal:90
-            },
-            {
-                id:5,
-                name:'Nuxt',
-                minVal:0,
-                maxVal:50
-            },
-            {
-                id:6,
-                name:'Sass',
-                minVal:0,
-                maxVal:100
-            },
-            {
-                id:7,
-                name:'Vuetify',
-                minVal:0,
-                maxVal:100
-            },
-            {
-                id:8,
-                name:'Bootstrap',
-                minVal:0,
-                maxVal:100
-            },
-            {
-                id:9,
-                name:'Tailwind',
-                minVal:0,
-                maxVal:100
-            },
-            {
-                id:10,
-                name:'Jquery',
-                minVal:0,
-                maxVal:90
-            },
-            {
-                id:11,
-                name:'AJAX',
-                minVal:0,
-                maxVal:100
-            },
-            {
-                id:12,
-                name:'Git',
-                minVal:0,
-                maxVal:100
-            },
-            {
-                id:13,
-                name:'Docker',
-                minVal:0,
-                maxVal:60
-            },
-            {
-                id:14,
-                name:'Linux',
-                minVal:0,
-                maxVal:60
-            },
-            {
-                id:15,
-                name:'Microsoft Sql Server',
-                minVal:0,
-                maxVal:80
-            },
-            {
-                id:16,
-                name:'MySql',
-                minVal:0,
-                maxVal:80
-            },
-            {
-                id:17,
-                name:'Apache Tomcat',
-                minVal:0,
-                maxVal:50
-            },
-            {
-                id:18,
-                name:'Nginx',
-                minVal:0,
-                maxVal:50
-            },
-            
-        ],  
-        
-      }
-    },
     
+   setup(){
+    const taskStore = useTaskStore()
+
+    const {skills} = storeToRefs(taskStore)
 
 
-    methods:{
-        
-    },
+    return{
+        taskStore ,skills
+    }
+
+
+
+   },
+
+
 
     mounted () {  
         
