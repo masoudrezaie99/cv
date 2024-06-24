@@ -40,85 +40,91 @@
                 maxVal:90
             },
             {
-                id:4,
+                id:3,
+                name:'Pinia',
+                minVal:0,
+                maxVal:90
+            },
+            {
+                id:5,
                 name:'Nuxt',
                 minVal:0,
                 maxVal:50
             },
             {
-                id:5,
+                id:6,
                 name:'Sass',
                 minVal:0,
                 maxVal:100
             },
             {
-                id:6,
+                id:7,
                 name:'Vuetify',
                 minVal:0,
                 maxVal:100
             },
             {
-                id:7,
+                id:8,
                 name:'Bootstrap',
                 minVal:0,
                 maxVal:100
             },
             {
-                id:8,
+                id:9,
                 name:'Tailwind',
                 minVal:0,
                 maxVal:100
             },
             {
-                id:9,
+                id:10,
                 name:'Jquery',
                 minVal:0,
                 maxVal:90
             },
             {
-                id:10,
+                id:11,
                 name:'AJAX',
                 minVal:0,
                 maxVal:100
             },
             {
-                id:11,
+                id:12,
                 name:'Git',
                 minVal:0,
                 maxVal:100
             },
             {
-                id:12,
+                id:13,
                 name:'Docker',
                 minVal:0,
                 maxVal:60
             },
             {
-                id:13,
+                id:14,
                 name:'Linux',
                 minVal:0,
                 maxVal:60
             },
             {
-                id:14,
+                id:15,
                 name:'Microsoft Sql Server',
                 minVal:0,
                 maxVal:80
             },
             {
-                id:15,
+                id:16,
                 name:'MySql',
                 minVal:0,
                 maxVal:80
             },
             {
-                id:16,
+                id:17,
                 name:'Apache Tomcat',
                 minVal:0,
                 maxVal:50
             },
             {
-                id:17,
+                id:18,
                 name:'Nginx',
                 minVal:0,
                 maxVal:50
